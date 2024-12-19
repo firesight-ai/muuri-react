@@ -1,3 +1,4 @@
+import React from 'react';
 import type { ComponentType } from 'react';
 declare const hooksNames: readonly ["useData", "useDrag", "useDraggable", "useGrid", "useRefresh", "useShow", "useVisibility"];
 /**
@@ -16,5 +17,5 @@ export declare function getHandler(key: string): <T>(t: T) => {
  * @param enabledHooks - The hooks to enable.
  * @returns - The wrapped component.
  */
-export declare function withHooks<T extends object>(Component: ComponentType<T>, enabledHooks: typeof hooksNames[number][]): (props: T) => JSX.Element;
+export declare function withHooks<T extends object>(Component: ComponentType<T>, enabledHooks: typeof hooksNames[number][]): (props: T) => React.JSX.Element;
 export {};

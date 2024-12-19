@@ -1,7 +1,7 @@
-/// <reference types="react" />
+import React from 'react';
 import PropTypes from 'prop-types';
 import type { GridComponentProps } from '../interfaces';
-export declare function GridComponent({ children, gridProps, grid, filter, sort, sortOptions, addOptions, propsToData, onSend, onDragStart, onDragEnd, onFilter, onSort, onMount, onUnmount, forceSync, dragFixed, dragEnabled, instantLayout, }: GridComponentProps): JSX.Element;
+export declare function GridComponent({ children, gridProps, grid, filter, sort, sortOptions, addOptions, propsToData, onSend, onDragStart, onDragEnd, onFilter, onSort, onMount, onUnmount, forceSync, dragFixed, dragEnabled, instantLayout, }: GridComponentProps): React.JSX.Element;
 export declare namespace GridComponent {
     var propTypes: {
         grid: PropTypes.Validator<object>;
